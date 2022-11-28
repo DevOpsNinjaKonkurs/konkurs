@@ -1,0 +1,81 @@
+.credit-table {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  display: flex;
+}
+
+.credit-table * {
+  text-align: center;
+}
+
+.single-credit {
+  border-bottom: none;
+  border-right: 1px solid #e1f1ff;
+  padding: 25px 25px;
+  width: 33%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single-credit:last-child {
+  border-bottom: none;
+  border-right: none;
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+  width: 128px;
+  height: 128px;
+}
+
+.credit-header {
+  color: #919191;
+  font-weight: 600;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.credit-features {
+  color: #016FF9;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 25px 0 25px;
+  flex-grow: 1;
+}
+
+.credit-feature-item {
+  border-top: 1px solid #e1f1ff;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+}
+
+.credit-feature-item:last-child {
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.credit-amount {
+  color: #016FF9;
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.credit-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348EFE;
+  margin: 25px 0;
+  padding: 15px 35px;
+  text-decoration: none;
+}
+
+.credit-button:hover,
+.credit-button:focus {
+  background-color: #e1f1ff;
+}

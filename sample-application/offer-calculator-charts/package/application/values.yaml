@@ -1,0 +1,4 @@
+database:
+  url: jdbc:postgresql://offer-calculator-postgresql:5432/postgres
+  user: postgres
+  password: postgres
