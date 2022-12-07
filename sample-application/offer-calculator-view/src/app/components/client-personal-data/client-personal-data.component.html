@@ -1,0 +1,41 @@
+<div class="personal-data">
+    <div class="input-with-icon">
+      <input class="text-input" type="text" placeholder="Imię i nazwisko" [(ngModel)]="data.fullName"/>
+      <div class="input-icon">
+        <fa-icon [icon]="faUser"></fa-icon>
+      </div>
+    </div>
+
+    <div class="input-with-icon">
+      <input class="text-input" type="email" placeholder="Adres email" [(ngModel)]="data.email"/>
+      <div class="input-icon">
+        <fa-icon [icon]="faEnvelope"></fa-icon>
+      </div>
+    </div>
+
+    <div class="input-with-icon">
+      <input class="text-input" type="text" placeholder="Adres zamieszkania" [(ngModel)]="data.address"/>
+      <div class="input-icon">
+        <fa-icon [icon]="faAddress"></fa-icon>
+      </div>
+    </div>
+
+    <div class="date-gender-row">
+      <div>
+        <mat-form-field>
+          <mat-label>Data urodzenia</mat-label>
+          <input matInput [matDatepicker]="picker" [(ngModel)]="data.birthDate">
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+
+      <div class="gender-box">
+        <mat-radio-group name="gender" [(ngModel)]="data.gender">
+          <mat-radio-button value="F">Kobieta</mat-radio-button>
+          <mat-radio-button value="M">Mężczyzna</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </div>
+</div>

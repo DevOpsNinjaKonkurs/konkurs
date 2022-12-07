@@ -1,0 +1,44 @@
+.personal-data {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 25px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.text-input {
+  width: 100%;
+  padding: 1em;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+}
+
+.input-with-icon {
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.input-with-icon input {
+  padding-left: 4.4em;
+}
+
+.input-with-icon .input-icon {
+  position: absolute;
+  top: 0;
+  width: 3.4em;
+  line-height: 3.4em;
+  text-align: center;
+}
+
+.date-gender-row {
+  display: flex;
+  margin-top: 2em;
+}
+
+.gender-box {
+  margin-left: 2em;
+}

@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="personal-data-box">
+    <app-client-personal-data [data]="personalData"></app-client-personal-data>
+  </div>
+
+  <div class="card-credit-data-box">
+    <div>
+      <p class="title">Kredyt gotówkowy</p>
+    </div>
+
+    <div class="input-box">
+      <label><b>Kwota kredytu - {{creditData.creditAmount}} zł</b></label>
+      <mat-slider min="1000" max="200000" step="100">
+        <input matSliderThumb [(ngModel)]="creditData.creditAmount">
+      </mat-slider>
+    </div>
+
+    <div class="input-box">
+      <label><b>Ilość rat - {{creditData.installmentCount}}</b></label>
+      <mat-slider min="6" max="360" step="1">
+        <input matSliderThumb [(ngModel)]="creditData.installmentCount">
+      </mat-slider>
+    </div>
+
+    <div class="navigation-row">
+      <a routerLink="/credits" mat-mini-fab color="primary">
+        <mat-icon>arrow_backward</mat-icon>
+      </a>
+      <button mat-mini-fab color="primary" (click)="complete()" [disabled]="notEnoughData()">
+        <mat-icon>done</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
